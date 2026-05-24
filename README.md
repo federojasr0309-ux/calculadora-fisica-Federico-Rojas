@@ -39,6 +39,6 @@ Para abrir y probar la calculadora de manera local, siga estos sencillos pasos:
 1. Descargar o Clonar el Repositorio:
    Asegúrese de clonar este repositorio usando Git o descargue los archivos directamente en una carpeta.
 2. Estructura de Archivos:
-   Valide que los archivos `index.html`, `style.css` y `script.js` se encuentren juntos en el mismo directorio.
+   Valide que los archivos index.html, style.css y script.js se encuentren juntos en el mismo directorio.
 3. Ejecución:
-   Haga doble clic sobre el archivo `index.html`. Este se abrirá de forma automática en su navegador web sin necesidad de instalar servidores locales ni dependencias adicionales.
+   Haga doble clic sobre el archivo index.html. Este se abrirá de forma automática en su navegador web sin necesidad de instalar servidores locales ni dependencias adicionales.
