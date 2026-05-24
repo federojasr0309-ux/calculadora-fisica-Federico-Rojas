@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Magnitudes Físicas</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Calculadora de Magnitudes Físicas</h1>
+        <p class="autor">Desarrollado por: <strong>Federico Rojas Rodriguez</strong></p>
+    </header>
+
+    <main class="calculadora-container">
+
+        <section class="card">
+            <h3>1. Velocidad (v = d / t)</h3>
+            <label>Distancia (m): <input type="number" id="v_d" step="any"></label>
+            <label>Tiempo (s): <input type="number" id="v_t" step="any"></label>
+            <button onclick="calcularVelocidad()">Calcular</button>
+            <p class="resultado" id="res_velocidad">Resultado: -</p>
+        </section>
+
+        <section class="card">
+            <h3>2. Aceleración (a = Δv / Δt)</h3>
+            <label>Cambio de Velocidad (m/s): <input type="number" id="a_dv" step="any"></label>
+            <label>Cambio de Tiempo (s): <input type="number" id="a_dt" step="any"></label>
+            <button onclick="calcularAceleracion()">Calcular</button>
+            <p class="resultado" id="res_aceleracion">Resultado: -</p>
+        </section>
+
+        <section class="card">
+            <h3>3. Fuerza (F = m · a)</h3>
+            <label>Masa (kg): <input type="number" id="F_m" step="any"></label>
+            <label>Aceleración (m/s²): <input type="number" id="F_a" step="any"></label>
+            <button onclick="calcularFuerza()">Calcular</button>
+            <p class="resultado" id="res_fuerza">Resultado: -</p>
+        </section>
+
+        <section class="card">
+            <h3>4. Trabajo (W = F · d · cos(θ))</h3>
+            <label>Fuerza (N): <input type="number" id="W_F" step="any"></label>
+            <label>Distancia (m): <input type="number" id="W_d" step="any"></label>
+            <label>Ángulo (grados): <input type="number" id="W_ang" step="any" value="0"></label>
+            <button onclick="calcularTrabajo()">Calcular</button>
+            <p class="resultado" id="res_trabajo">Resultado: -</p>
+        </section>
+
+        <section class="card">
+            <h3>5. Energía Cinética (K = ½ · m · v²)</h3>
+            <label>Masa (kg): <input type="number" id="K_m" step="any"></label>
+            <label>Velocidad (m/s): <input type="number" id="K_v" step="any"></label>
+            <button onclick="calcularCinetica()">Calcular</button>
+            <p class="resultado" id="res_cinetica">Resultado: -</p>
+        </section>
+
+        <section class="card">
+            <h3>6. Energía Potencial (U = m · g · h)</h3>
+            <label>Masa (kg): <input type="number" id="U_m" step="any"></label>
+            <label>Altura (m): <input type="number" id="U_h" step="any"></label>
+            <p class="info-g">Gravedad (g) asumida: 9.81 m/s²</p>
+            <button onclick="calcularPotencial()">Calcular</button>
+            <p class="resultado" id="res_potencial">Resultado: -</p>
+        </section>
+
+        <section class="card">
+            <h3>7. Densidad (ρ = m / V)</h3>
+            <label>Masa (kg): <input type="number" id="rho_m" step="any"></label>
+            <label>Volumen (m³): <input type="number" id="rho_V" step="any"></label>
+            <button onclick="calcularDensidad()">Calcular</button>
+            <p class="resultado" id="res_densidad">Resultado: -</p>
+        </section>
+
+        <section class="card">
+            <h3>8. Presión (P = F / A)</h3>
+            <label>Fuerza (N): <input type="number" id="P_F" step="any"></label>
+            <label>Área (m²): <input type="number" id="P_A" step="any"></label>
+            <button onclick="calcularPresion()">Calcular</button>
+            <p class="resultado" id="res_presion">Resultado: -</p>
+        </section>
+
+        <section class="card">
+            <h3>9. Carga Eléctrica (q = I · t)</h3>
+            <label>Corriente (A): <input type="number" id="q_I" step="any"></label>
+            <label>Tiempo (s): <input type="number" id="q_t" step="any"></label>
+            <button onclick="calcularCarga()">Calcular</button>
+            <p class="resultado" id="res_carga">Resultado: -</p>
+        </section>
+
+        <section class="card">
+            <h3>10. Ley de Ohm (V = I · R)</h3>
+            <label>Corriente (I en A): <input type="number" id="Ohm_I" step="any"></label>
+            <label>Resistencia (R en Ω): <input type="number" id="Ohm_R" step="any"></label>
+            <button onclick="calcularOhm()">Calcular</button>
+            <p class="resultado" id="res_ohm">Resultado: -</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Actividad Evaluativa #3</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
