@@ -27,7 +27,7 @@ Control de Errores Matemáticos: Incluye algoritmos de control para evitar error
 
 
 Estructura del proyecto
-El proyecto está modularizado en los siguientes archivos fundamentales para asegurar un código limpio y organizado:
+El proyecto está organizado en los siguientes archivos fundamentales para asegurar un código limpio y organizado:
 index.html: Estructura semántica de la página y formularios de entrada.
 style.css: Estilos visuales, diseño responsivo y presentación limpia.
 script.js: Lógica algorítmica de los cálculos físicos y validaciones de errores.
